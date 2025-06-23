@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre o Evento - Festejando Campo-Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Sobre o Evento</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="index2.html">Programação</a></li>
+        <li><a href="index3.html">Galeria</a></li>
+        <li><a href="index4.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>A união que transforma</h2>
+      <p>Nosso evento celebra a forte conexão entre o campo e a cidade, mostrando como a tecnologia pode impulsionar práticas sustentáveis e fortalecer as comunidades rurais.</p>
+      <p>A troca de experiências entre agricultores, pesquisadores e cidadãos urbanos é essencial para construir um futuro mais harmonioso.</p>
+    </section>
+
+    <section class="card">
+      <h2>Inovação no campo</h2>
+      <p>Utilizamos drones para monitoramento das plantações, sensores para otimização da irrigação e softwares para análise de dados, trazendo inteligência para o cultivo tradicional.</p>
+      <p>Essa inovação contribui para a produtividade, a preservação ambiental e a qualidade de vida no campo e na cidade.</p>
+    </section>
+
+    <section class="card">
+      <h2>Cultura e tradições</h2>
+      <p>Preservar as raízes culturais do campo é valorizar a identidade e história que enriquecem nossa sociedade urbana. No evento, temos apresentações artísticas, culinária típica e rodas de conversa que reforçam esses laços.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Festejando a Conexão Campo-Cidade</p>
+  </footer>
+
+  <!-- Trator -->
+  <img src="trator.png" alt="Trator andando" class="trator" id="trator" />
+
+  <!-- Script para exibir o trator ao fim da página -->
+  <script>
+    const trator = document.getElementById('trator');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const alturaTotal = document.documentElement.scrollHeight;
+      const alturaTela = window.innerHeight;
+
+      if (scrollTop + alturaTela >= alturaTotal - 150) {
+        trator.classList.add('visivel');
+      } else {
+        trator.classList.remove('visivel');
+      }
+    });
+  </script>
+
+</body>
+</html>
